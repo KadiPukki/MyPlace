@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --gray: #333;
+    --pink: #dc143c;
+}
+body {
+        font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    transition: .5s;
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+/*comeco do menu*/
+.nav-bar {
+    background-color: rgb(205, 205, 235);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.nav-title {
+    font-size: 5vh;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.logo {
+    color: var(--pink);
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 4vw;
+}
+
+.nav-menu a {
+    font-size: 1.3vw;
+}
+/*final do menu*/
+
+/*comeco do header*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*final do menu*/
