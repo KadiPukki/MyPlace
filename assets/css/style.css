@@ -1,45 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --white: #fff;
-    --gray: #333;
-    --pink: #dc143c;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-body {
-        font-family: 'Poppins', sans-serif;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--white);
-    transition: .5s;
-}
-
-a:hover {
-    color: var(--pink);
-}
-
 /*comeco do menu*/
 .nav-bar {
     width: 100%;
     height: 15vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /*align-items: center;*/
     padding: 0 5vw;
-    position:absolute;
+    position:fixed;
+    z-index: 1;
     top: 0;
     left: 0;
 }
@@ -49,7 +17,6 @@ a:hover {
     font-weight: 500;
     color: var(--white);
     margin-top: 4vh;
-    
 }
 
 .logo {
@@ -78,6 +45,10 @@ a:hover {
     margin-top: 8vh;
     display: none;
     
+}
+
+.active-scroll {
+    background-color: var(--blue);
 }
 /*final do menu*/
 
@@ -131,10 +102,61 @@ a:hover {
 .btn:hover {
     background-color: var(--white);
 }
-
-
 /*final do menu*/
 
+
+.tours {
+    width: 80%;
+    min-height: 100vh;
+    margin: 10vh auto;
+}
+
+.tours-title {
+    text-align: center;
+    font-size: 4vmin;
+    font-weight: 400;
+    margin-bottom: 7vh;
+}
+
+.tours-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tour-list-item {
+    width: 40%;
+    /*margin-bottom: 10vh;*/
+    margin: 5vh 0;
+    box-shadow: 10px 1px 30px 1px #ccc; /*direita, embaixo, borrado, espessura e cor*/
+    padding: 2vw;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.tour-list-item:hover {
+    transform: scale(1.1);
+}
+
+.tour-list-item img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.tour-list-item h3 {
+    font-size: 3vmin;
+    font-weight: 600;
+    margin: 1.5vw 0;
+}
+
+.tour-list-item p {
+    font-size: 2.5vmin;
+    padding: 0 3vw;
+    margin-bottom: 3vh;
+}
 /*exemplo box*/
 .box {
     width: 100%;
@@ -143,47 +165,3 @@ a:hover {
     margin: 10px 0;
 }
 
-/*início menu responsivo*/
-@media(max-width: 500px) {
-    .menu-btn {
-        display: block;
-    } 
-
-    .nav-bar {
-        padding: 0;
-    }
-
-    .nav-title {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-    }
-
-    .nav-menu {
-        background-color: var(--gray);
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: -1100px;
-        transition: .5s;
-    }
-
-    .mobile-menu {
-        margin-top: 0;
-    }
-
-    .nav-menu li {
-        margin: 2vh auto;
-    }
-
-    .nav-menu a {
-        text-transform: uppercase;
-        font-size: 3vw;
-    }
-
-
-    
-
-}
-/*final menu responsivo*/

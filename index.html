@@ -11,25 +11,27 @@
     
     <script src="https://kit.fontawesome.com/9d6b460a5d.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <!--início do menu-->
     <nav class="nav-bar">
         <h1 class="nav-title"><span class="logo">My</span>Place</h1>
         <ul class="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#tours">Tours</a></li>
-            <li><a href="#explore">Explore</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato" class="btn">Contato</a></li>
+            <li><a href="#home" class="menu-item">Home</a></li>
+            <li><a href="#tours" class="menu-item">Tours</a></li>
+            <li><a href="#explore" class="menu-item">Explore</a></li>
+            <li><a href="#sobre" class="menu-item">Sobre</a></li>
+            <li><a href="#contato" class="btn menu-item">Contato</a></li>
         </ul>
         <i class="fa-solid fa-bars menu-btn"></i>
     </nav>
     <!--final do menu-->
 
     <!--início do header-->
-    <header class="hero">
+    <header class="hero" id="home">
         <h2 class="hero-title">O MyPlace é exatamente assim...</h2>
         <!--linha-->
         <div class="line"></div>
@@ -38,12 +40,64 @@
     </header>
     <!--final do header-->
 
-    <div class="box" id="tours">Tours</div>
+    <!--Início section tour-->
+    <section class="tours" id="tours">
+        <div class="tours-title">
+            <p>Faça um tour pelas montanhas</p>
+            <div class="line"></div>
+        </div>
+        <div class="tours-list">
+            <div class="tour-list-item">
+                <img src="./assets/images/pexels-eberhard-grossgasteiger-572897.jpg" alt="tour pelas montanhas">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum voluptatum labore nihil ut ab!</p>
+                <a href="" class="btn">Veja Mais</a>
+            </div>
+
+            <div class="tour-list-item">
+                <img src="./assets/images/pexels-francesco-ungaro-2835436.jpg" alt="tour pelas montanhas">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum voluptatum labore nihil ut ab!</p>
+                <a href="" class="btn">Veja Mais</a>
+            </div>
+
+            <div class="tour-list-item">
+                <img src="./assets/images/pexels-jonathan-petersson-399176.jpg" alt="tour pelas montanhas">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum voluptatum labore nihil ut ab!</p>
+                <a href="" class="btn">Veja Mais</a>
+            </div>
+
+            <div class="tour-list-item">
+                <img src="./assets/images/pexels-julia-volk-5769320.jpg" alt="tour pelas montanhas">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum voluptatum labore nihil ut ab!</p>
+                <a href="" class="btn">Veja Mais</a>
+            </div>
+
+            <div class="tour-list-item">
+                <img src="./assets/images/pexels-kleber-m-ortiz-4028995.jpg" alt="tour pelas montanhas">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum voluptatum labore nihil ut ab!</p>
+                <a href="" class="btn">Veja Mais</a>
+            </div>
+
+            <div class="tour-list-item">
+                <img src="./assets/images/pexels-riciardus-789380.jpg" alt="tour pelas montanhas">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum voluptatum labore nihil ut ab!</p>
+                <a href="" class="btn">Veja Mais</a>
+            </div>
+        </div>
+    </section>
+    <!--Final section tour-->
+
     <div class="box" id="explore">Explore</div>
     <div class="box" id="sobre">Sobre</div>
     <div class="box" id="contato">Contato</div>
 
-<script src="./assets/js/menu.js"></script>    
+<script src="./assets/js/menu.js"></script> 
+<script src="./assets/js/scroll.js"></script>   
     
 </body>
 </html>

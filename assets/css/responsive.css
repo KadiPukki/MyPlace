@@ -1,0 +1,51 @@
+@media(max-width: 850px) {
+    /*início menu responsivo*/
+    .menu-btn {
+        display: block;
+    } 
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .nav-title {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .nav-menu {
+        background-color: var(--gray);
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -1100px;
+        transition: .5s;
+    }
+
+    .mobile-menu {
+        margin-top: 0;
+    }
+
+    .nav-menu li {
+        margin: 2vh auto;
+    }
+
+    .nav-menu a {
+        text-transform: uppercase;
+        font-size: 3vw;
+    }
+    /*final menu responsivo*/
+
+    /*início dos cards*/
+    .tours-list {
+        flex-direction: column;
+    }
+
+    .tour-list-item {
+        width: 80%;
+    }
+
+    /*final dos cards*/
+}

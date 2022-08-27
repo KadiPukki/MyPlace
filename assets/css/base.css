@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --gray: #333;
+    --pink: #dc143c;
+    --blue: rgba(13, 4, 48, 0.89);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+        font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    transition: .5s;
+}
+
+a:hover {
+    color: var(--pink);
+}
