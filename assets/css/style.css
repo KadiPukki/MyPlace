@@ -9,6 +9,10 @@
     --gray: #333;
     --pink: #dc143c;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 body {
         font-family: 'Poppins', sans-serif;
 }
@@ -33,15 +37,19 @@ a:hover {
     height: 15vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     padding: 0 5vw;
     position:absolute;
+    top: 0;
+    left: 0;
 }
 
 .nav-title {
     font-size: 5vh;
     font-weight: 500;
     color: var(--white);
+    margin-top: 4vh;
+    
 }
 
 .logo {
@@ -50,6 +58,7 @@ a:hover {
 
 .nav-menu {
     display: flex;
+    align-items: center;
 }
 
 .nav-menu li {
@@ -57,7 +66,18 @@ a:hover {
 }
 
 .nav-menu a {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
+}
+
+.menu-btn {
+    font-size: 5vh;
+    cursor: pointer;
+    position: absolute;
+    right: 4vh;
+    color: var(--white);
+    margin-top: 8vh;
+    display: none;
+    
 }
 /*final do menu*/
 
@@ -71,6 +91,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,4 +132,58 @@ a:hover {
     background-color: var(--white);
 }
 
+
 /*final do menu*/
+
+/*exemplo box*/
+.box {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+/*início menu responsivo*/
+@media(max-width: 500px) {
+    .menu-btn {
+        display: block;
+    } 
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .nav-title {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .nav-menu {
+        background-color: var(--gray);
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -1100px;
+        transition: .5s;
+    }
+
+    .mobile-menu {
+        margin-top: 0;
+    }
+
+    .nav-menu li {
+        margin: 2vh auto;
+    }
+
+    .nav-menu a {
+        text-transform: uppercase;
+        font-size: 3vw;
+    }
+
+
+    
+
+}
+/*final menu responsivo*/
