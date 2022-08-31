@@ -45,7 +45,48 @@
 
     .tour-list-item {
         width: 80%;
+    }    
+    /*final dos cards*/
+
+    /*início explore*/
+
+    .explore-content {
+        width: 95%;
+        padding-top: 30%;        
+        
+    }
+    /*final explore*/
+
+    /*início sobre*/
+    .sobre {
+        flex-direction: column;
+        
+    }
+     .sobre-content {
+        margin-bottom: 10vh;
+     }
+
+    .sobre-images img:hover {
+        transform: none;
+    }
+        /*final sobre*/
+
+    /*início contato*/
+    .contato {
+        flex-direction: column;
+        height: 200vh;        
     }
 
-    /*final dos cards*/
-}
+    .contato-line {
+        width: 60vw;
+    }
+
+    .redes-icones {
+        font-size: 5vw;
+    }
+    }
+
+    /*final contato*/
+    
+    
+
